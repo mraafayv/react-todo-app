@@ -45,19 +45,19 @@ export default function App() {
         <h1 className="text-2xl font-bold text-center mb-4">Todo App</h1>
         <div className="flex justify-center mb-4">
           <button
-            className={`mx-2 px-4 py-2 rounded ${filter === "all" ? "bg-blue-500 text-white" : "bg-gray-200"}`}
+            className={`mx-2 px-4 py-2 rounded hover:cursor-pointer ${filter === "all" ? "bg-blue-500 text-white" : "bg-gray-200"}`}
             onClick={() => setFilter("all")}
           >
             All
           </button>
           <button
-            className={`mx-2 px-4 py-2 rounded ${filter === "completed" ? "bg-green-500 text-white" : "bg-gray-200"}`}
+            className={`mx-2 px-4 py-2 rounded hover:cursor-pointer ${filter === "completed" ? "bg-green-500 text-white" : "bg-gray-200"}`}
             onClick={() => setFilter("completed")}
           >
             Completed
           </button>
           <button
-            className={`mx-2 px-4 py-2 rounded ${filter === "pending" ? "bg-yellow-500 text-white" : "bg-gray-200"}`}
+            className={`mx-2 px-4 py-2 rounded hover:cursor-pointer ${filter === "pending" ? "bg-yellow-500 text-white" : "bg-gray-200"}`}
             onClick={() => setFilter("pending")}
           >
             Pending

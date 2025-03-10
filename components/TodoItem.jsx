@@ -11,7 +11,7 @@ export default function TodoItem({ todo, toggleTodo, deleteTodo }) {
       </span>
       <button
         onClick={() => toggleTodo(todo.id)}
-        className={`px-3 py-1 rounded text-sm ${
+        className={`px-3 py-1 rounded text-sm hover:cursor-pointer ${
           todo.completed ? "bg-green-500 text-white" : "bg-yellow-500 text-white"
         }`}
       >
@@ -19,7 +19,7 @@ export default function TodoItem({ todo, toggleTodo, deleteTodo }) {
       </button>
       <button
         onClick={() => deleteTodo(todo.id)}
-        className="ml-2 text-red-500 hover:text-red-700"
+        className="ml-2 text-red-500 hover:text-red-700 hover:cursor-pointer"
       >
         ✖
       </button>
